@@ -1,0 +1,11 @@
+<template>
+	<require from="./todo.input"></require>
+	<require from="./todo.list"></require>
+	<div style="margin-top: 50px;">
+		<h1>${heading}</h1>
+		<todo-input todos.bind="todoList"></todo-input>
+		<div class="row" style="margin-top: 10px">
+			<todo-list todos.bind="todoList"></todo-list>
+		</div>
+	</div>
+</template>

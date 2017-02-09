@@ -1,0 +1,6 @@
+<template>
+    <require from="./todo.item"></require>
+    <ul>
+        <todo-item repeat.for="todo of todoList" todo.bind="todo" todos.bind="todoList" remove.trigger="removeTodo(todo)"></todo-item>
+    </ul>
+</template>

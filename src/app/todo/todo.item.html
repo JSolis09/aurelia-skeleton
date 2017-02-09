@@ -1,0 +1,11 @@
+<template>
+    <li class="checkbox">
+        <label style="margin-right: 5px; ">
+            <input type="checkbox" checked.bind="todo.done">
+            <span css="text-decoration: ${todo.done ? 'line-through' : 'none'}">${todo.description}</span>
+        </label>
+        <button class="btn btn-default" click.delegate="emitRemove()">
+            Remove
+        </button>
+    </li>
+</template>
