@@ -15,7 +15,7 @@ function configureEnvironment() {
   return gulp.src(`aurelia_project/environments/${env}.ts`)
     .pipe(changedInPlace({firstPass:true}))
     .pipe(rename('environment.ts'))
-    .pipe(gulp.dest(project.paths.root));
+    .pipe(gulp.dest(project.paths.root+'/app'));
 }
 
 var typescriptCompiler = typescriptCompiler || null;

@@ -9,7 +9,7 @@ export class App {
       { 
         route     : '', 
         name      :'todo', 
-        moduleId  : './app/todo/todo',   
+        moduleId  : './todo/todo',   
         title     : 'Todo List'
       }
     ]);

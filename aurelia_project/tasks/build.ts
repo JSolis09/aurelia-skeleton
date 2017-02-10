@@ -31,7 +31,7 @@ function injectAppBundle() {
   var injectOptions = { 
     starttag: '<!-- inject:app.js -->', 
     addRootSlash: false, 
-    ignorePath: '/.tmp/' 
+    ignorePath: '/.tmp/'
   };
   return gulp.src('./src/index.html')
     .pipe(inject(injectScripts, injectOptions))
