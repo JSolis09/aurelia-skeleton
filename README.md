@@ -26,7 +26,14 @@ if you want to develop, with auto-refresh of the browser, simply specify the --w
 ```bash
 au run --watch
 ```
-
+if you want run the built project, add  --env and spicify the environment (prod)
+```bash
+au run --env prod
+```
+build the project (Production)
+```bash
+au build --env prod
+```
 
 
 
