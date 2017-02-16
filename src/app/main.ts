@@ -11,6 +11,7 @@ import environment from './environment';
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
+    .feature('app/todo')
 
   if (environment.debug) {
     aurelia.use.developmentLogging();
@@ -20,5 +21,5 @@ export function configure(aurelia: Aurelia) {
     aurelia.use.plugin('aurelia-testing');
   }
 
-  aurelia.start().then(() => aurelia.setRoot());
+  aurelia.start().then(() => aurelia.setRoot(''));
 }
