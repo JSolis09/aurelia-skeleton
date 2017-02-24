@@ -30,6 +30,15 @@
     "fileExtension": ".css",
     "source": "src/**/*.css"
   },
+  "unitTestRunner": {
+    "id": "karma",
+    "displayName": "Karma",
+    "source": "test/app/**/*.ts"
+  },
+  "testFramework": {
+    "id": "jasmine",
+    "displayName": "Jasmine"
+  },
   "paths": {
     "root": "src"
   },
